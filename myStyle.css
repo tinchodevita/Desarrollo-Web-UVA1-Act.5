@@ -1,0 +1,78 @@
+* { margin: 0; padding: 0; }
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+nav{
+    margin: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+div{
+    margin: 10px 0px;
+    margin-left: 5px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bienvenida{
+    text-align: center;
+    padding: 20px;
+}
+
+.formulario{
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+input, select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.boton-container{
+    align-items: end;
+}

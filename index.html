@@ -1,0 +1,87 @@
+<!-- Creá un sitio  web donde haya un formulario de registro de usuarios para entrenar en un gimnasio, Un formulario donde los usuarios se registren para entrenar, elijan su tipo de plan y horarios. La web debe estar completa, no solo el HTML, el contenido de la página, también: menú, títulos, imágenes, etc.  
+
+ 
+
+Completá el formulario y dale estilo con lo que hemos aprendido de CSS: text-, font-, las propiedades de las cajas, los pseudoselectores y box-model.   -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./myStyle.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>Gimnasio FranFit</h1>
+        <nav>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Sucursales</a></li>
+                <li><a href="">Merch</a></li>
+                <li><a href="">Nuestros Entrenadores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bienvenida">
+            <h2>¡Unite a FranFit y transformá tu vida!</h2>
+            <p>Complete el formulario para registrarse en el gimnasio.</p>
+        </section>
+
+        <section class="formulario">
+            <h2>Formulario de registro</h2>
+            <form action="sent">
+                <h4>Datos personales</h4>
+                <div>
+                    <label for="nombre">Ingrese su nombre completo</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <label for="dni">Ingrese su DNI</label>
+                    <input type="number" id="dni" name="dni">
+                </div>
+                <div>
+                    <label for="correo">Ingrese su dirección de correo</label>
+                    <input type="email" id="correo" name="correo">
+                </div>
+        
+                <h4>Domicilio</h4>
+                <div>
+                    <label for="calle">Calle</label>
+                    <input type="text" id="calle" name="calle">
+                </div>
+                <div>
+                    <label for="numero">Número</label>
+                    <input type="number" id="numero" name="numero">
+                </div>
+                <div>
+                    <label for="cp">Código postal</label>
+                    <input type="number" id="cp" name="cp">
+                </div>
+                <div>
+                    <label for="localidad">Localidad</label>
+                    <input type="text" id="localidad" name="localidad">
+                </div>
+        
+                <h4>Turno de entrenamiento</h4>
+                <div>
+                    <label for="turno">Elegí tu turno</label>
+                    <select id="turno" name="turno">
+                        <option value="mañana">Mañana</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noche">Noche</option>
+                    </select>
+                </div>
+        
+                <div class="boton-container">
+                    <button type="submit">ENVIAR</button>
+                </div>
+            </form>
+        </section>        
+    </main>
+
+</body>
+</html>
